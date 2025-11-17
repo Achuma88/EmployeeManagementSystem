@@ -10,8 +10,7 @@ namespace Ems.Data.Models.Domain
         [Required(ErrorMessage = "Role is required")]
         public string EmpRole { get; set; }
 
-        [Required(ErrorMessage = "Status is required")]
-        public string EmpStatus { get; set; }
+        
     }
 
 }

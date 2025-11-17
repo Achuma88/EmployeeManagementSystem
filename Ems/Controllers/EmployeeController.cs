@@ -61,8 +61,8 @@ namespace Ems.UI.Controllers
             var editEmployee = new EditEmployee
             {
                 EmpID = employee.EmpID,
-                EmpRole = employee.EmpRole,
-                EmpStatus = employee.EmpStatus
+                EmpRole = employee.EmpRole
+              
                 // Do NOT map password fields here if they are not required in the edit model
             };
 
@@ -286,7 +286,7 @@ namespace Ems.UI.Controllers
             if (employee == null)
                 return NotFound();
 
-            var updateModel = new Admin
+            var updateModel = new ResetPassword
             {
                 EmpID = employee.EmpID
             };

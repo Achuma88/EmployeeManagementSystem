@@ -99,7 +99,7 @@ namespace Ems.Data.Repository
                 {
                     editEmployee.EmpID,
                     editEmployee.EmpRole,
-                    editEmployee.EmpStatus
+                    
                 });
 
                 return true;
@@ -177,7 +177,7 @@ namespace Ems.Data.Repository
         public async Task<IEnumerable<Employee>> SearchEmployeesAsync(string searchTerm)
         {
             var parameters = new { SearchTerm = searchTerm };
-            var result = await _db.GetData<Employee, dynamic>("sp_SearchEmployees", parameters);
+            var result = await _db.GetData<Employee, dynamic>("sp_SearchEmployee", parameters);
             return result;
         }
         public async Task<bool> UpdateAdminAsync(Admin admin)

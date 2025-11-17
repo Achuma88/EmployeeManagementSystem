@@ -95,13 +95,7 @@
             <span asp-validation-for="EmpRole" class="text-danger"></span>
         </div>
 
-        <div class="mb-1">
-            <label asp-for="EmpStatus" class="form-label">Status</label>
-            <select asp-for="EmpStatus" class="form-control" asp-items="statusList">
-                <option value="" disabled selected>-- Select Status --</option>
-            </select>
-            <span asp-validation-for="EmpStatus" class="text-danger"></span>
-        </div>
+       
 
         <button type="submit" class="btn btn-primary">Update</button>
     </form>
