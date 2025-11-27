@@ -202,6 +202,11 @@ namespace Ems.Data.Repository
                 return false;
             }
         }
+        public async Task<IEnumerable<Employee>> GetReportAsync()
+        {
+            var result = await _db.GetData<Employee, dynamic>("spEmsReports",new { });
+            return result;
+        }
 
 
     }

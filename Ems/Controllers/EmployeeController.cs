@@ -434,7 +434,7 @@ namespace Ems.UI.Controllers
             var result = await _employeeRepository.GetActiveEmployeesAsync();
             return View(result); // Pass the data to the view
         }
-       
+
 
         
 

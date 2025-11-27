@@ -21,6 +21,7 @@ namespace Ems.Data.Repository
         //Task<EmployeeSummary> GetSummaryAsync();
         Task<IEnumerable<Employee>> GetActiveEmployeesAsync();
         Task<IEnumerable<Employee>> SearchEmployeesAsync(string searchTerm);
+        
       
     }
 }

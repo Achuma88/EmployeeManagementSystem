@@ -1,0 +1,14 @@
+﻿using Ems.Data.Models.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ems.Data.Repository
+{
+    public interface IReportRepository
+    {
+        Task<IEnumerable<Reports>> GetReportAsync();
+    }
+}
